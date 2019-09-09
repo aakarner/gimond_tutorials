@@ -277,7 +277,7 @@ style='font-size:10.0pt;color:black'>
   </span></span><span style='font-size:12.0pt;color:black'>Create a folder
   called <b>Lab 3</b></span><span style='font-size:12.0pt;color:black'> </span><span
   style='color:black;background:#F2F2F2'>on the class shared folder (e.g. \\arch-data\19FA_CRP386-6\ak38895\Labs\Lab
-  3), on a USB stick, in some other convenient location.</span></span></p>
+  3), on a USB stick, in some other convenient location.</span></p>
   <p class=MsoListParagraphCxSpLast style='margin-top:7.5pt;margin-right:0in;
   margin-bottom:7.5pt;margin-left:.5in;text-indent:-.25in;line-height:13.0pt'><span
   style='font-size:10.0pt;color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -288,7 +288,7 @@ style='font-size:10.0pt;color:black'>
   href="https://mgimond.github.io/ArcGIS_tutorials/Opening_zip_files.htm"><span
   style='font-size:12.0pt'>extract the files</span></a></span><span
   style='font-size:12.0pt;color:black'> from the <b>Data_management.zip</b>
-  file to your newly created <b>Lab 3</b> directory. </span></p>
+  file to a “data” subfolder in your newly created <b>Lab 3</b> folder. </span></p>
   </td>
  </tr>
 </table>
@@ -309,7 +309,7 @@ and how to fix broken map document links. </p>
 
 <p class=MsoNormal>Note that most ArcCatalog functionality can be achieved
 through the Catalog window in ArcMap. As such, using ArcCatalog is usually not
-necessary, but we are including a lesson it it here for completeness. </p>
+necessary, but we are including a lesson in it here for completeness. </p>
 
 <div class=MsoNormal align=center style='text-align:center'>
 
@@ -322,8 +322,8 @@ necessary, but we are including a lesson it it here for completeness. </p>
 <p class=MsoTocHeading>Contents</p>
 
 <p class=MsoToc1><a href="#_Toc289329081">Step 1:<span style='font-family:"Calibri",sans-serif;
-color:windowtext;text-decoration:none'>         </span>Create a Folder
-Connection<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+color:windowtext;text-decoration:none'>         </span>Create a Folder Connection<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
 style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
 
 <p class=MsoToc1><a href="#_Toc289329082">Step 2:<span style='font-family:"Calibri",sans-serif;
@@ -430,10 +430,16 @@ computers. </p>
 workspace selected. In the right window pane you should see a list of GIS files
 (three shapefiles and one raster) and a map document (Acadia_park.mxd).</p>
 
-<p class=MsoNormal><span style='position:absolute;z-index:251659264;margin-left:
-173px;margin-top:68px;width:118px;height:12px'><img width=118 height=12
-src="Managing_GIS_data_files/image005.png" alt="Lab 3"></span><img width=552
-height=256 id="Picture 19" src="Managing_GIS_data_files/image006.png"></p>
+<p class=MsoNormal><span style='position:absolute;z-index:251683840;margin-left:
+268px;margin-top:1px;width:133px;height:13px'><img width=133 height=13
+src="Managing_GIS_data_files/image005.png" alt="Lab 3\data"></span><span
+style='position:absolute;z-index:251661312;margin-left:107px;margin-top:140px;
+width:126px;height:13px'><img width=126 height=13
+src="Managing_GIS_data_files/image006.png" alt="Lab 3\data"></span><span
+style='position:absolute;z-index:251659264;margin-left:173px;margin-top:68px;
+width:118px;height:12px'><img width=118 height=12
+src="Managing_GIS_data_files/image007.png" alt="Lab 3\data"></span><img
+width=552 height=256 id="Picture 19" src="Managing_GIS_data_files/image008.png"></p>
 
 <p class=MsoNormal>ArcCatalog views the contents of a folder (or database)
 differently from a standard file management window.  </p>
@@ -442,7 +448,7 @@ differently from a standard file management window.  </p>
 to be confused with Internet Explorer)</p>
 
 <p class=Instructions><img width=275 height=41 id="Picture 20"
-src="Managing_GIS_data_files/image007.png"></p>
+src="Managing_GIS_data_files/image009.png"></p>
 
 <p class=Instructions>Navigate to this exercise’s workspace folder.</p>
 
@@ -456,8 +462,10 @@ layer contains different bits of information. For example, a .prj file contains
 information about the shapefile’s coordinate system and a .dbf file contains
 information about the shapefile’s attribute(s).</p>
 
-<p class=MsoNormal> <img width=542 height=414 id="Picture 1"
-src="Managing_GIS_data_files/image008.png"></p>
+<p class=MsoNormal><span style='position:absolute;z-index:251663360;margin-left:
+43px;margin-top:96px;width:82px;height:13px'><img width=82 height=13
+src="Managing_GIS_data_files/image010.png" alt="Lab 3\data"></span> <img
+width=542 height=414 id="Picture 1" src="Managing_GIS_data_files/image011.png"></p>
 
 <p class=MsoNormal>At this point, it is important to note that GIS data
 management should be done exclusively inside of ArcCatalog (or the Catalog
@@ -466,7 +474,7 @@ window in ArcMap) and <i>not</i> inside of Windows Manager. </p>
 <p class=MsoNormal>Another file displayed by ArcCatalog (and recognized as a
 GIS file type) is the <b>Acadia_park.mxd</b> file <span style='position:relative;
 top:3.0pt'><img width=112 height=22 id="Picture 6"
-src="Managing_GIS_data_files/image009.png"></span>. This is the project file
+src="Managing_GIS_data_files/image012.png"></span>. This is the project file
 that instructs ArcMap on <i>which</i> GIS data files to map and <i>how</i> to
 display them in the map document. Note that the .mxd file <i>does not</i> store
 the GIS data (i.e. it reads the data from the various GIS data files located in
@@ -478,7 +486,7 @@ the project folder).</p>
 <p class=MsoNormal>The MXD document should open up inside of Arcmap.</p>
 
 <p class=MsoNormal><img width=529 height=460 id="Picture 7"
-src="Managing_GIS_data_files/image010.png"></p>
+src="Managing_GIS_data_files/image013.png"></p>
 
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
@@ -494,24 +502,24 @@ practice to locate the source of each layer listed in the Table of Contents
 
 <p class=Instructions>In the TOC <b>click</b> on the <b>List By Source</b>
 button<img width=17 height=19 id="Picture 83"
-src="Managing_GIS_data_files/image011.png">.</p>
+src="Managing_GIS_data_files/image014.png">.</p>
 
 <p class=MsoNormal><img width=154 height=81 id="Picture 82"
-src="Managing_GIS_data_files/image012.png"></p>
+src="Managing_GIS_data_files/image015.png"></p>
 
 <p class=MsoNormal>The listing in the TOC will look different. For each layer,
 the source location is identified. For example, the raster layer hillshade is
-located in the folder <i>.\Lab 3</i>. The other vectors layers (Roads, Water
-and Parks) are also located in the <i>.\Lab 3</i> folder. Remember that ArcMap does
-not store GIS data features in the .mxd document. Instead, it stores <i>information</i>
-about the <i>source location</i> for each feature. So when ArcMap draws the
-hillshade in the Map view window, it accesses the raster file hillshade.img
-located in the .\<i>Lab 3</i> folder and grabs all the data needed to draw the
-hillshade layer. So it is vital that the location of all features used in a map
-document be properly sourced in the TOC.</p>
+located in the folder <i>.\Lab 3\data</i>. The other vectors layers (Roads,
+Water and Parks) are also located in the <i>.\Lab 3\data</i> folder. Remember
+that ArcMap does not store GIS data features in the .mxd document. Instead, it
+stores <i>information</i> about the <i>source location</i> for each feature. So
+when ArcMap draws the hillshade in the Map view window, it accesses the raster
+file hillshade.img located in the .\<i>Lab 3\data</i> folder and grabs all the data
+needed to draw the hillshade layer. So it is vital that the location of all features
+used in a map document be properly sourced in the TOC.</p>
 
-<p class=MsoNormal><img width=412 height=283 id="Picture 11"
-src="Managing_GIS_data_files/image013.png"></p>
+<p class=MsoNormal><img width=297 height=347 id="Picture 38"
+src="Managing_GIS_data_files/image016.png"></p>
 
 <p class=Instructions><b>Close</b> ArcMap. If asked to save changes, select <b>No</b>.</p>
 
@@ -539,7 +547,7 @@ create a new <b>file geodatabase</b>.</p>
 select <b>New &gt;&gt; File Geodatabase</b>.</p>
 
 <p class=Instructions><img width=555 height=226 id="Picture 21"
-src="Managing_GIS_data_files/image014.png"></p>
+src="Managing_GIS_data_files/image017.png"></p>
 
 <p class=MsoNormal>A new file geodatabase will be added to your Lab 3 folder.</p>
 
@@ -549,7 +557,7 @@ select <b>rename</b>. </p>
 <p class=Instructions>You will rename the geodatabase <b>Acadia_data</b>.</p>
 
 <p class=MsoNormal><img width=165 height=166 id="Picture 126"
-src="Managing_GIS_data_files/image015.png"></p>
+src="Managing_GIS_data_files/image018.png"></p>
 
 <p class=MsoNormal>A File Geodatabase is nothing more than a folder. In fact,
 if you look at your project’s folder in Windows Explorer, you will see a folder
@@ -577,7 +585,7 @@ Windows Explorer.</p>
 </div>
 
 <p class=MsoNormal><span style='color:white'><img width=395 height=526
-id="Picture 1024" src="Managing_GIS_data_files/image016.png"></span></p>
+id="Picture 1024" src="Managing_GIS_data_files/image019.png"></span></p>
 
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
@@ -600,25 +608,25 @@ for more information.</p>
 geodatabase and select <b>New</b> &gt;&gt; <b>Feature Dataset</b>.</p>
 
 <p class=MsoNormal><img border=0 width=352 height=161 id="Picture 1025"
-src="Managing_GIS_data_files/image017.jpg"></p>
+src="Managing_GIS_data_files/image020.jpg"></p>
 
 <p class=MsoNormal>In the<b> New Feature Dataset</b> window, name the new
 feature dataset <b>Vector_data</b>.</p>
 
 <p class=MsoNormal><img border=0 width=337 height=99 id="Picture 1026"
-src="Managing_GIS_data_files/image018.png"></p>
+src="Managing_GIS_data_files/image021.png"></p>
 
 <p class=Instructions>Click <b>Next</b>.</p>
 
 <p class=Instructions>Select <b>Projected Coordinate Systems &gt;&gt; UTM
 &gt;&gt; NAD 1983 &gt;&gt; NAD 1983 UTM Zone 19N</b> for the dataset’s
 coordinate system. (We will discuss projections in detail later in the course.
-For right now, it is sufficient that a <i>map projection</i> is a set of
-equations used to convert locations between the Earth’s surface—a three-dimensional
-spheroid—and a two-dimensional plane (i.e. a flat map.))</p>
+For right now, it is sufficient to know that a <i>map projection</i> is a set
+of equations used to convert locations from the Earth’s surface—a
+three-dimensional spheroid—to a two-dimensional plane (i.e. a flat map.))</p>
 
 <p class=MsoNormal><img border=0 width=234 height=471 id="Picture 1027"
-src="Managing_GIS_data_files/image019.png"></p>
+src="Managing_GIS_data_files/image022.png"></p>
 
 <p class=MsoNormal>Any features created in or copied to this feature dataset
 will inherit the UTM NAD83 Zone 19 North coordinate system. </p>
@@ -633,8 +641,8 @@ Coordinate System for this feature dataset).</p>
 <p class=MsoNormal>If you expand you folder connection in ArcCatalog, you
 should see the newly created Vector_data dataset. </p>
 
-<p class=Instructions><img border=0 width=642 height=141 id="Picture 22"
-src="Managing_GIS_data_files/image020.png"></p>
+<p class=Instructions><img border=0 width=642 height=110 id="Picture 22"
+src="Managing_GIS_data_files/image023.png"></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -644,27 +652,27 @@ src="Managing_GIS_data_files/image020.png"></p>
 dataset and <b>select Import &gt;&gt; Feature Class (multiple).</b></p>
 
 <p class=Instructions><img border=0 width=492 height=247 id="Picture 23"
-src="Managing_GIS_data_files/image021.png"></p>
+src="Managing_GIS_data_files/image024.png"></p>
 
 <p class=Instructions>In the<b> Feature Class to Geodabase (multiple)</b>
 window, click on the folder icon <img border=0 width=23 height=25
-id="Picture 1030" src="Managing_GIS_data_files/image022.png"> to the right of
+id="Picture 1030" src="Managing_GIS_data_files/image025.png"> to the right of
 the <b>Input Features</b> field.</p>
 
-<p class=Instructions>Navigate to your <b>Lab 3</b> connection (remember that
-it is accessed from the <i>Folder Connections</i> folder) and <b>select</b> the
-three vector features.</p>
+<p class=Instructions>Navigate to your <b>Lab 3</b> connection and the data
+subfolder (remember that it is accessed from the <i>Folder Connections</i> folder)
+and <b>select</b> the three vector features.</p>
 
 <p class=Instructions><img border=0 width=286 height=84 id="Picture 1031"
-src="Managing_GIS_data_files/image023.jpg"></p>
+src="Managing_GIS_data_files/image026.jpg"></p>
 
 <p class=Instructions>Click <b>Add</b>.</p>
 
 <p class=MsoNormal>The three vector features should now be listed in the
 window.</p>
 
-<p class=Instructions><img border=0 width=525 height=163 id="Picture 24"
-src="Managing_GIS_data_files/image024.png"></p>
+<p class=Instructions><img border=0 width=461 height=246 id="Picture 39"
+src="Managing_GIS_data_files/image027.jpg"></p>
 
 <p class=Instructions>Click <b>OK</b> to begin the migration process.</p>
 
@@ -672,7 +680,7 @@ src="Managing_GIS_data_files/image024.png"></p>
 appear in the Vector_data feature dataset. </p>
 
 <p class=Instructions><img border=0 width=146 height=89 id="Picture 27"
-src="Managing_GIS_data_files/image025.png"></p>
+src="Managing_GIS_data_files/image028.png"></p>
 
 <p class=MsoNormal>Next, you will copy the raster data feature into the
 geodatabase. Raster features cannot be stored inside of feature datasets,
@@ -682,18 +690,21 @@ instead they are stored at the root level of the geodatabase.</p>
 and select <b>Import &gt;&gt; Raster Datasets</b>.</p>
 
 <p class=MsoNormal><img border=0 width=557 height=337 id="Picture 28"
-src="Managing_GIS_data_files/image026.png"></p>
+src="Managing_GIS_data_files/image029.png"></p>
 
 <p class=Instructions>In the<b> Raster to Geodatabase</b> window, click on the
 folder icon <img border=0 width=23 height=25 id="Picture 1037"
-src="Managing_GIS_data_files/image022.png"> to the right of the <b>Input
+src="Managing_GIS_data_files/image025.png"> to the right of the <b>Input
 Rasters</b> field.</p>
 
-<p class=Instructions>Navigate to your <b>Lab 3</b> connection folder and <b>select</b>
+<p class=Instructions>Navigate to your <b>Lab 3\data</b> connection folder and <b>select</b>
 the <b>hillshade.img</b> raster file.</p>
 
-<p class=Instructions><img border=0 width=489 height=102 id="Picture 29"
-src="Managing_GIS_data_files/image027.png"></p>
+<p class=Instructions><span style='position:absolute;z-index:251677696;
+margin-left:83px;margin-top:41px;width:142px;height:15px'><img width=142
+height=15 src="Managing_GIS_data_files/image030.png" alt=data></span><img
+border=0 width=489 height=102 id="Picture 29"
+src="Managing_GIS_data_files/image031.png"></p>
 
 <p class=Instructions>Click <b>Add</b>.</p>
 
@@ -704,7 +715,7 @@ process.</p>
 You should see the new hillshade raster feature.</p>
 
 <p class=Instructions><img border=0 width=598 height=119 id="Picture 31"
-src="Managing_GIS_data_files/image028.png"></p>
+src="Managing_GIS_data_files/image032.png"></p>
 
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
@@ -729,12 +740,12 @@ the <b>hillshade</b>, <b>Parks</b>, <b>Roads</b> and <b>Water</b> features.
 do so before you attempt to delete the files).</p>
 
 <p class=Instructions><img border=0 width=244 height=155 id="Picture 5"
-src="Managing_GIS_data_files/image029.png"></p>
+src="Managing_GIS_data_files/image033.png"></p>
 
 <p class=MsoNormal>Your <b>Lab 3</b> folder should now look like this:</p>
 
-<p class=Instructions><img border=0 width=453 height=328 id="Picture 14"
-src="Managing_GIS_data_files/image030.png"></p>
+<p class=Instructions><img border=0 width=370 height=221 id="Picture 41"
+src="Managing_GIS_data_files/image034.jpg"></p>
 
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
@@ -752,7 +763,7 @@ should also notice red exclamation marks next to each layer in the TOC. This
 map opened fine earlier in this exercise, so what happened? </p>
 
 <p class=MsoNormal><img border=0 width=148 height=226 id="Picture 1043"
-src="Managing_GIS_data_files/image031.png"></p>
+src="Managing_GIS_data_files/image035.png"></p>
 
 <p class=MsoNormal>Remember that ArcMap does not store data, but instead pulls
 the data from separate file sources. Since we removed the original features
@@ -767,25 +778,25 @@ new geodatabase).</p>
 tab.</p>
 
 <p class=MsoNormal><img border=0 width=193 height=63 id="Picture 1045"
-src="Managing_GIS_data_files/image032.png"></p>
+src="Managing_GIS_data_files/image036.png"></p>
 
 <p class=MsoNormal>The Data source window confirms that ArcMap is looking for a
-<b>shapefile</b> called <b>Roads</b> located in the Data_managament_exercise
-folder (the shapefile you deleted in an earlier step). We will provide ArcMap
-with the new location.</p>
+<b>shapefile</b> called <b>Roads</b> located in the Lab 3\data folder (the
+shapefile you deleted in an earlier step). We will provide ArcMap with the new
+location.</p>
 
-<p class=MsoNormal><img border=0 width=485 height=97 id="Picture 32"
-src="Managing_GIS_data_files/image033.png"></p>
+<p class=MsoNormal><img border=0 width=546 height=256 id="Picture 42"
+src="Managing_GIS_data_files/image037.jpg"></p>
 
 <p class=Instructions>Click on the <b>Set</b> <b>Data Sources</b> button <span
 style='position:relative;top:3.0pt'><img border=0 width=133 height=22
-id="Picture 1047" src="Managing_GIS_data_files/image034.png"></span>.</p>
+id="Picture 1047" src="Managing_GIS_data_files/image038.png"></span>.</p>
 
 <p class=Instructions>Expand <b>Acadia_data.gbd &gt;&gt; Vector_data</b> and select
 the <b>Roads</b> feature. </p>
 
 <p class=MsoNormal><img border=0 width=314 height=123 id="Picture 33"
-src="Managing_GIS_data_files/image035.png"></p>
+src="Managing_GIS_data_files/image039.png"></p>
 
 <p class=Instructions>Click <b>Add</b>.</p>
 
@@ -797,8 +808,8 @@ location.</p>
 <p class=Instructions>We will <b>repeat</b> the same process to fix the source
 paths for <b>Water</b>, <b>Parks</b> and <b>hillshade</b>.</p>
 
-<p class=Instructions><img border=0 width=244 height=255 id="Picture 35"
-src="Managing_GIS_data_files/image036.png"></p>
+<p class=Instructions><img border=0 width=348 height=297 id="Picture 43"
+src="Managing_GIS_data_files/image040.jpg"></p>
 
 <p class=MsoNormal>Next you will save the modified map document. But before you
 do, there is one more step that you will want to perform. ArcMap accepts <b>absolute</b>
@@ -811,13 +822,13 @@ option.</p>
 Properties</b>.</p>
 
 <p class=Instructions><img border=0 width=193 height=358 id="Picture 1052"
-src="Managing_GIS_data_files/image037.png"></p>
+src="Managing_GIS_data_files/image041.png"></p>
 
 <p class=Instructions>Make sure that <b>Store relative pathnames to data
 sources</b> is checked in the <b>Map Document Properties</b> window.</p>
 
 <p class=Instructions><img border=0 width=226 height=28 id="Picture 1053"
-src="Managing_GIS_data_files/image038.png"></p>
+src="Managing_GIS_data_files/image042.png"></p>
 
 <p class=Instructions>Click <b>OK</b> to close the Map Document Properties
 window.</p>
@@ -838,7 +849,7 @@ style='font-size:10.0pt;color:black'>
 <p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
 margin-left:0in;line-height:13.0pt'><span style='font-size:10.0pt;color:gray'><img
 border=0 width=76 height=27 id="Picture 8"
-src="Managing_GIS_data_files/image039.png"></span><span style='font-size:10.0pt;
+src="Managing_GIS_data_files/image043.png"></span><span style='font-size:10.0pt;
 color:gray'> Manuel Gimond, last modified on 7/10/2018 </span></p>
 
 <p class=MsoNormal>&nbsp;</p>
