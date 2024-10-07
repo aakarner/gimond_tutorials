@@ -188,7 +188,7 @@ Census data</span></b></p>
 style='font-size:10.0pt;color:black'>&nbsp;</span></p>
 
 <p class=MsoNormal>In this exercise, you will learn how to query, download and
-map census data. You will use 2013-2017 American Community Survey (ACS) five-year
+map census data. You will use American Community Survey (ACS) five-year
 estimates. The ACS is a sample survey collected continuously between decennial
 censuses. </p>
 
@@ -264,7 +264,8 @@ background:#8DB3E2'>
 
 </div>
 
-<p class=Instructions-GIS>Create a new project in ArcGIS Pro called “Lab 8.”</p>
+<p class=Instructions-GIS>Create a new project in ArcGIS Pro to contain your
+work on this lab.</p>
 
 <p class=Instructions-GIS>In a browser, navigate to the website <a
 href="http://www.socialexplorer.com/">http://www.socialexplorer.com/</a>.</p>
@@ -273,13 +274,13 @@ href="http://www.socialexplorer.com/">http://www.socialexplorer.com/</a>.</p>
 subscription. UT Austin has a “professional access” subscription which offers
 unfettered access to census data.</p>
 
-<p class=Instructions-GIS>Click on the <b>Tables</b> tab.</p>
+<p class=Instructions-GIS>Click on the <b>Tables </b> tab.</p>
 
 <p class=Instructions-GIS>Next, expand <b>American Community Surveys (5-Year
 Estimates)</b>.</p>
 
 <p class=Instructions-GIS>Click on <b>Begin Report</b> link next to <strong><span
-style='font-family:"Arial",sans-serif'>American Community Survey (ACS) 2013--2017
+style='font-family:"Arial",sans-serif'>American Community Survey (ACS) 2018—2022
 (5-Year Estimates)</span></strong>.</p>
 
 <p class=MsoNormal>This places you in the <i>data query</i> environment.</p>
@@ -312,9 +313,16 @@ alt="Graphical user interface, text, application, email&#10;&#10;Description aut
 select <b>All Counties </b>then click on the <b><i>Add</i></b> link just
 beneath the selection window.</p>
 
-<p class=Instructions-GIS><img border=0 width=514 height=514
-src="Downloading_Census_Data_files/image002.png"
-alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
+<p class=Instructions-GIS><span style='position:absolute;z-index:251662336;
+margin-left:40px;margin-top:749px;width:148px;height:96px'><img width=118
+height=77 src="Downloading_Census_Data_files/image002.png"></span><span
+style='position:absolute;z-index:251661312;margin-left:23px;margin-top:458px;
+width:199px;height:118px'><img width=159 height=94
+src="Downloading_Census_Data_files/image003.png"></span><img border=0
+width=510 height=486 src="Downloading_Census_Data_files/image004.png"
+alt="Graphical user interface&#10;&#10;Description automatically generated with medium confidence"></p>
+
+<p class=Instructions-GIS>&nbsp;</p>
 
 <p class=Instructions-GIS>Click on <b>Proceed to Tables</b> to proceed to the
 attribute selection step.</p>
@@ -349,19 +357,22 @@ page.</p>
 <p class=Instructions-GIS>On the next page, select the <b>Data Download</b>
 tab.</p>
 
-<p class=Instructions-GIS><img border=0 width=694 height=204
-src="Downloading_Census_Data_files/image003.png"
-alt="A screenshot of a computer program&#10;&#10;Description automatically generated"></p>
+<p class=Instructions-GIS><span style='position:absolute;z-index:251663360;
+margin-left:499px;margin-top:763px;width:232px;height:96px'><img width=186
+height=77 src="Downloading_Census_Data_files/image005.png"></span><img
+border=0 width=624 height=174 id="Picture 6"
+src="Downloading_Census_Data_files/image006.png"
+alt="Graphical user interface, application, website&#10;&#10;Description automatically generated"></p>
 
 <p class=Instructions-GIS>Click on the <b>County data (CSV)</b> link to
 download the data.</p>
 
 <p class=Instructions-GIS><img border=0 width=303 height=100 id="Picture 14"
-src="Downloading_Census_Data_files/image004.png"></p>
+src="Downloading_Census_Data_files/image007.png"></p>
 
 <p class=Instructions-GIS>Note the file <i>name</i> you are downloading! You
 will need this information when locating the file in the Downloads Folder on
-your PC.</p>
+your computer.</p>
 
 <p class=MsoNormal>You will also want to download the <b>data dictionary</b>
 which provides descriptive information on the table’s attribute values.</p>
@@ -370,13 +381,13 @@ which provides descriptive information on the table’s attribute values.</p>
 bottom of the page.</p>
 
 <p class=MsoNormal><img border=0 width=526 height=112 id="Picture 12"
-src="Downloading_Census_Data_files/image005.png"></p>
+src="Downloading_Census_Data_files/image008.png"></p>
 
 <p class=Instructions-GIS>If prompted, select the <b>Open with Notepad</b>
 option.</p>
 
 <p class=MsoNormal><img border=0 width=302 height=182 id="Picture 45"
-src="Downloading_Census_Data_files/image006.png"></p>
+src="Downloading_Census_Data_files/image009.png"></p>
 
 <p class=MsoNormal>The column (attribute) information for your dataset is
 defined in this file. </p>
@@ -393,9 +404,9 @@ background:#8DB3E2'>
 </div>
 
 <p class=MsoNormal>The file you downloaded from the Social Explorer website is
-in the comma separated value (csv) file format. The file <i>name</i> is
-randomly generated so the filename shown in this tutorial will not necessarily
-match that of the file you downloaded.</p>
+in the comma separated value (csv) file format. The filename is randomly
+generated so the filename shown in this tutorial will not necessarily match
+that of the file you downloaded.</p>
 
 <p class=MsoNormal>A .csv file can be opened in either Excel or ArcGIS Pro. It
 is possible to accomplish any required data manipulation in either piece of
@@ -431,7 +442,7 @@ combinations</p>
 <p class=MsoNormal>For this tutorial, we will focus solely on the count data
 for educational attainment. The error data will not be used.</p>
 
-<p class=MsoNormal>Column <b>ACS_17_5yr_B15002001</b> (or simply B15002001 in
+<p class=MsoNormal>Column <b>ACS22_5yr_B15002001</b> (or simply B15002001 in
 the data dictionary file) represents total population 25 years or older for
 each county. This value will be used to normalize the population having
 attained a bachelor’s degree or greater.</p>
@@ -453,7 +464,7 @@ Table. Ensure that the destination for the output table is a file geodatabase.
 the same name as your project. Use that one.)</p>
 
 <p class=Instructions-GIS align=center style='text-align:center'><img border=0
-width=319 height=358 src="Downloading_Census_Data_files/image007.png"
+width=319 height=358 src="Downloading_Census_Data_files/image010.png"
 alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
 
 <p class=Instructions-GIS>Add a new field to the table called frac_bac (make
@@ -470,7 +481,7 @@ to enter the correct formula into the box below “frac_bac =”) </p>
 
 <p class=Instructions-GIS align=center style='text-align:center'><img border=0
 width=400 height=455 id="Picture 1"
-src="Downloading_Census_Data_files/image008.png"
+src="Downloading_Census_Data_files/image011.png"
 alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
 
 <p class=MsoNormal>After you hit OK, all cells in the frac_bac column should be
@@ -492,7 +503,9 @@ Tiger shapefiles website: <a
 href="https://www.census.gov/cgi-bin/geo/shapefiles/index.php">https://www.census.gov/cgi-bin/geo/shapefiles/index.php</a>.</p>
 
 <p class=Instructions-GIS>From the <b><i>Select year</i></b> pull-down menu, choose
-2017. </p>
+2022. (Note: The five-year ACS tables always match geographic data generated in
+the most recent year for which the ACS data are reported. In this case, that’s
+2022.)</p>
 
 <p class=Instructions-GIS>From the <b><i>Select a layer type</i></b> pull-down
 menu, select <b>Counties (and equivalent)</b>.</p>
@@ -503,8 +516,8 @@ menu, select <b>Counties (and equivalent)</b>.</p>
 file</b>.</p>
 
 <p class=Instructions-GIS><b>Unzip</b> and save the contents of the file to
-your project folder (the file is just over 70 MB in size and may therefore take
-up to a minute or two to download).</p>
+your project folder (the file is almost 80 MB in size and may take up to a minute
+or two to download).</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -519,7 +532,7 @@ background:#8DB3E2'>
 <p class=Instructions-GIS>Add the <b>tl_2017_us_county10</b> shapefile to a map.</p>
 
 <p class=MsoNormal><img border=0 width=480 height=278 id="Picture 10"
-src="Downloading_Census_Data_files/image009.png"
+src="Downloading_Census_Data_files/image012.png"
 alt="Map&#10;&#10;Description automatically generated"></p>
 
 <p class=MsoNormal>You’ll note that US territories (non-states) are also
@@ -568,35 +581,28 @@ using the Frac_bac attribute you computed in the Excel file.</p>
 symbology and <b>frac_bac</b> as the field.</p>
 
 <p class=Instructions-GIS><img border=0 width=329 height=358 id="Picture 11"
-src="Downloading_Census_Data_files/image010.png"
+src="Downloading_Census_Data_files/image013.png"
 alt="Graphical user interface, text, application, chat or text message&#10;&#10;Description automatically generated"></p>
 
 <p class=Instructions-GIS>The map should update immediately.</p>
 
 <p class=Instructions-GIS><img border=0 width=624 height=269 id="Picture 13"
-src="Downloading_Census_Data_files/image011.png"
+src="Downloading_Census_Data_files/image014.png"
 alt="A map of the world&#10;&#10;Description automatically generated with medium confidence"></p>
 
 <p class=Instructions-GIS>This map is pretty unsightly! Can you make its area and
-shape more closely represent the way it looks on the surface of the earth? Experiment
-with other aesthetic improvements as well (e.g., try lightening/removing the
-county boundary outlines).</p>
+shape more closely represent the way it looks on the surface of the earth using
+techniques we learned earlier in the course? Experiment with other aesthetic
+improvements as well (e.g., try lightening/removing the county boundary
+outlines).</p>
 
 <p class=MsoNormal>This ends this exercise.</p>
-
-<div class=MsoNormal align=center style='margin-top:7.5pt;margin-right:0in;
-margin-bottom:7.5pt;margin-left:0in;text-align:center;line-height:13.0pt'><span
-style='font-size:10.0pt;color:black'>
-
-<hr size=1 width="100%" noshade style='color:#CCCCCC' align=center>
-
-</span></div>
 
 <p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
 margin-left:0in;line-height:13.0pt'><span style='font-size:10.0pt;color:gray'><img
 border=0 width=76 height=26 id="Picture 8"
-src="Downloading_Census_Data_files/image012.png"></span><span style='font-size:
-10.0pt;color:gray'> Manuel Gimond, Alex Karner last modified on 9/16/2023</span></p>
+src="Downloading_Census_Data_files/image015.png"></span><span style='font-size:
+10.0pt;color:gray'> Manuel Gimond, Alex Karner. Last modified on 10/7/2024</span></p>
 
 </div>
 
