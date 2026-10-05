@@ -9,7 +9,7 @@
  /* Font Definitions */
  @font-face
 	{font-family:Helvetica;
-	panose-1:2 11 6 4 2 2 2 2 2 4;}
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
 @font-face
 	{font-family:Wingdings;
 	panose-1:5 0 0 0 0 0 0 0 0 0;}
@@ -128,7 +128,8 @@ span.Stepheader-GISChar
 	background:#8DB3E2;
 	font-weight:bold;}
 .MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
+	{font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
 .MsoPapDefault
 	{margin-bottom:10.0pt;
 	line-height:115%;}
@@ -155,12 +156,6 @@ ul
 style='font-size:20.0pt;line-height:115%;color:#365F91'>Downloading and mapping
 Census data</span></b></p>
 
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#CCCCCC' align=center>
-
-</div>
-
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='margin-left:.4pt;border-collapse:collapse;border:none'>
  <tr>
@@ -169,13 +164,13 @@ Census data</span></b></p>
   <p class=MsoListParagraphCxSpFirst style='margin-top:7.5pt;margin-right:0in;
   margin-bottom:7.5pt;margin-left:.5in;text-indent:-.25in;line-height:13.0pt'><span
   style='font-size:11.0pt;font-family:Symbol;color:black'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><i><span style='font-size:11.0pt;color:black'>Note that there
-  are no files to download for this exercise. You will be provided instructions
-  on how to download census data from Social Explorer in later steps.</span></i></p>
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+  style='font-size:11.0pt;color:black'>Note that there are no files to download
+  for this exercise. You will be provided instructions on how to download
+  census data from Social Explorer in later steps.</span></i></p>
   <p class=MsoListParagraphCxSpLast style='margin-top:7.5pt;margin-right:0in;
   margin-bottom:7.5pt;margin-left:.5in;text-indent:-.25in;line-height:13.0pt'><span
-  style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </span></span><i><span style='font-size:11.0pt;color:black'>Also note that a
   professional subscription to the socialexplorer.com website may be needed to
   download the data. If you are on the UT network, you will have full access to
@@ -192,74 +187,54 @@ map census data. You will use American Community Survey (ACS) five-year
 estimates. The ACS is a sample survey collected continuously between decennial
 censuses. </p>
 
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#CCCCCC' align=center>
-
-</div>
+<p class=MsoNormal></p>
 
 <p class=MsoTocHeading><a name="_Toc286147277">Contents</a></p>
 
-<p class=MsoToc1><a href="#_Toc83587070">Step 1:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Open Social Explorer website<span style='color:windowtext;
+<p class=MsoToc1><a href="#_Toc242093248">Step 1:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Create
+a new ArcGIS project and open Social Explorer website<span style='color:windowtext;
 display:none;text-decoration:none'>. </span><span
 style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
 
-<p class=MsoToc1><a href="#_Toc83587071">Step 2:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Selecting the spatial extent<span style='color:windowtext;
-display:none;text-decoration:none'> </span><span
+<p class=MsoToc1><a href="#_Toc242093249">Step 2:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Modifying
+the census data table in ArcGIS Pro<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
 style='color:windowtext;display:none;text-decoration:none'>2</span></a></p>
 
-<p class=MsoToc1><a href="#_Toc83587072">Step 3:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Selecting and downloading census attributes<span
-style='color:windowtext;display:none;text-decoration:none'>. </span><span
-style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+<p class=MsoToc1><a href="#_Toc242093250">Step 3:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Downloading
+Census shapefile<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
 
-<p class=MsoToc1><a href="#_Toc83587073">Step 4:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Modifying the census data table in Excel<span
-style='color:windowtext;display:none;text-decoration:none'> </span><span
+<p class=MsoToc1><a href="#_Toc242093251">Step 4:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Loading
+the census table and shapefile in ArcGIS<span style='color:windowtext;
+display:none;text-decoration:none'>.. </span><span
 style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
-<p class=MsoToc1><a href="#_Toc83587074">Step 5:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Downloading Census shapefile<span style='color:windowtext;
-display:none;text-decoration:none'>. </span><span
-style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+<p class=MsoToc1><a href="#_Toc242093252">Step 5:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Joining
+non-spatial census table to a spatial layer<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
-<p class=MsoToc1><a href="#_Toc83587075">Step 6:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Loading the census table and shapefile in ArcGIS<span
-style='color:windowtext;display:none;text-decoration:none'>. </span><span
-style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
-
-<p class=MsoToc1><a href="#_Toc83587076">Step 7:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Joining non-spatial census table to a spatial layer<span
-style='color:windowtext;display:none;text-decoration:none'> </span><span
-style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
-
-<p class=MsoToc1><a href="#_Toc83587077">Step 8:<span style='font-size:11.0pt;
-line-height:115%;font-family:"Calibri",sans-serif;color:windowtext;text-decoration:
-none'>       </span>Symbolizing the shapefiles by census data<span
-style='color:windowtext;display:none;text-decoration:none'>. </span><span
-style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+<p class=MsoToc1><a href="#_Toc242093253">Step 6:<span style='line-height:115%;
+font-family:"Calibri",sans-serif;color:windowtext;text-decoration:none'>       </span>Symbolizing
+the shapefiles by census data<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#CCCCCC' align=center>
-
-</div>
+<p class=MsoNormal></p>
 
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587070">Step 1:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=Stepheader-GIS><a name="_Toc242093248">Step 1:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Create a new ArcGIS project and open Social Explorer website</a></p>
 
 </div>
@@ -274,123 +249,22 @@ href="http://www.socialexplorer.com/">http://www.socialexplorer.com/</a>.</p>
 subscription. UT Austin has a “professional access” subscription which offers
 unfettered access to census data.</p>
 
-<p class=Instructions-GIS>Click on the <b>Tables </b> tab.</p>
+<p class=Instructions-GIS>You need to download county-level data for the entire
+United States. Our dataset is the <strong><span style='font-family:"Arial",sans-serif'>American
+Community Survey (ACS) 2018—2022 (5-Year Estimates)</span></strong>.</p>
 
-<p class=Instructions-GIS>Next, expand <b>American Community Surveys (5-Year
-Estimates)</b>.</p>
-
-<p class=Instructions-GIS>Click on <b>Begin Report</b> link next to <strong><span
-style='font-family:"Arial",sans-serif'>American Community Survey (ACS) 2018—2022
-(5-Year Estimates)</span></strong>.</p>
-
-<p class=MsoNormal>This places you in the <i>data query</i> environment.</p>
-
-<div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:#8DB3E2'>
-
-<p class=Stepheader-GIS><a name="_Toc83587071">Step 2:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Selecting the spatial extent</a></p>
-
-</div>
-
-<p class=MsoNormal>You will download educational attainment data for each <b>county</b>
-in the <b>US</b> in a tabulated form. In subsequent steps, you will join this
-table to a shapefile of the US counties. Note that you can download data
-aggregated down to the census block-group level with the ACS five-year data
-sets.</p>
-
-<p class=Instructions-GIS>Under <b><i>select a geographic type</i></b> select <b>County</b>.</p>
-
-<p class=MsoNormal>Do not change the <b><i>select a state</i></b> option.
-However, if you wanted to restrict the analysis to a single state, you would
-define the state in this step.</p>
-
-<p class=Instructions-GIS><img border=0 width=624 height=303 id="Picture 3"
-src="Downloading_Census_Data_files/image001.png"
-alt="Graphical user interface, text, application, email&#10;&#10;Description automatically generated"></p>
-
-<p class=Instructions-GIS>Under <b><i>select one or more geographic areas</i></b>,
-select <b>All Counties </b>then click on the <b><i>Add</i></b> link just
-beneath the selection window.</p>
-
-<p class=Instructions-GIS><img border=0 width=725 height=669
-src="Downloading_Census_Data_files/image002.png"></p>
-
-<p class=Instructions-GIS>&nbsp;</p>
-
-<p class=Instructions-GIS>Click on <b>Proceed to Tables</b> to proceed to the
-attribute selection step.</p>
-
-<div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:#8DB3E2'>
-
-<p class=Stepheader-GIS><a name="_Toc83587072">Step 3:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Selecting and downloading census attributes</a></p>
-
-</div>
-
-<p class=MsoNormal>The Social Explorer website provides you with both the original
-census data tables and a ‘filtered’ version of these data tables. The census
-ACS dataset is based on sample surveys (not total enumeration) and therefore provides
-only <i>estimated</i> total counts. </p>
-
-<p class=MsoNormal>The U.S. Census Bureau provides an estimate of the error
-along with its dataset. The filtered version of the tables <u>excludes</u> the
-margin of error (MoE) data. It’s always good practice to work with both the <i>estimate</i>
-and the <i>MoE</i> data, so in keeping with good practice you will choose to select
-the original census data table (note that this tutorial will <i>not</i> make
-use of the MoE).</p>
-
-<p class=Instructions-GIS>Search for table <b>B15002</b> (Sex by educational
-attainment for population 25 years and over) then add it to the <b>Table
-Selections</b> window.</p>
-
-<p class=Instructions-GIS>Click on <b>Show Results</b> to proceed to the next
-page.</p>
-
-<p class=Instructions-GIS>On the next page, select the <b>Data Download</b>
-tab.</p>
-
-<p class=Instructions-GIS><img border=0 width=624 height=191
-src="Downloading_Census_Data_files/image003.png"
-alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
-
-<p class=Instructions-GIS>Click on the <b>County data (CSV)</b> link to
-download the data.</p>
-
-<p class=Instructions-GIS><img border=0 width=303 height=100 id="Picture 14"
-src="Downloading_Census_Data_files/image004.png"></p>
-
-<p class=Instructions-GIS>Note the file <i>name</i> you are downloading! You
-will need this information when locating the file in the Downloads Folder on
-your computer.</p>
+<p class=Instructions-GIS>You’ll use table <b>B15002</b> (Sex by educational
+attainment for population 25 years and over). Develop the appropriate query and
+download the csv that you need. </p>
 
 <p class=MsoNormal>You will also want to download the <b>data dictionary</b>
 which provides descriptive information on the table’s attribute values.</p>
 
-<p class=Instructions-GIS>Click on the <b>Data dictionary</b> link near the
-bottom of the page.</p>
-
-<p class=MsoNormal><img border=0 width=526 height=112 id="Picture 12"
-src="Downloading_Census_Data_files/image005.png"></p>
-
-<p class=Instructions-GIS>If prompted, select the <b>Open with Notepad</b>
-option.</p>
-
-<p class=MsoNormal><img border=0 width=302 height=182 id="Picture 45"
-src="Downloading_Census_Data_files/image006.png"></p>
-
-<p class=MsoNormal>The column (attribute) information for your dataset is
-defined in this file. </p>
-
-<p class=Instructions-GIS>Make sure to save the data dictionary file in your
-project folder for future reference.</p>
-
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587073">Step 4:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Modifying the census data table in </a>ArcGIS Pro</p>
+<p class=Stepheader-GIS><a name="_Toc242093249">Step 2:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Modifying the census data table in ArcGIS Pro</a></p>
 
 </div>
 
@@ -417,16 +291,16 @@ downloaded in the previous step.</p>
 <p class=MsoNormal>The data columns are broken down into three groups:</p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Ancillary geographic data information (IDs and locations for the
 most part)</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Count data for each educational attainment/gender combinations</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Error estimates for each educational attainment/gender
 combinations</p>
 
@@ -449,18 +323,18 @@ ArcGIS Pro. You’ll need to convert the .csv into a file geodatabase table
 first, before you can add a field.</p>
 
 <p class=Instructions-GIS>Right click on the table <span style='font-family:
-Wingdings'>à</span> Data <span style='font-family:Wingdings'>à</span> Export
+Wingdings'></span> Data <span style='font-family:Wingdings'></span> Export
 Table. Ensure that the destination for the output table is a file geodatabase.
 (Hint: When you created a new project, a new file geodatabase was created with
 the same name as your project. Use that one.)</p>
 
 <p class=Instructions-GIS align=center style='text-align:center'><img border=0
-width=319 height=358 src="Downloading_Census_Data_files/image007.png"
+width=239 height=268 src="Downloading_Census_Data.fld/image001.png"
 alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
 
 <p class=Instructions-GIS>Add a new field to the table called frac_bac (make
-sure there is no space in the field name). Use a data type that can contain a decimal
-value.</p>
+sure there is no space in the field name). Use a data type that can contain a
+decimal value.</p>
 
 <p class=MsoNormal>The new field will initially be populated with null values.</p>
 
@@ -471,8 +345,8 @@ The screenshot below shows what the field calculator will look like. You need
 to enter the correct formula into the box below “frac_bac =”) </p>
 
 <p class=Instructions-GIS align=center style='text-align:center'><img border=0
-width=400 height=455 id="Picture 1"
-src="Downloading_Census_Data_files/image008.png"
+width=300 height=342 id="Picture 1"
+src="Downloading_Census_Data.fld/image002.png"
 alt="A screenshot of a computer&#10;&#10;Description automatically generated"></p>
 
 <p class=MsoNormal>After you hit OK, all cells in the frac_bac column should be
@@ -484,7 +358,7 @@ delineates the US county boundaries.</p>
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587074">Step 5:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=Stepheader-GIS><a name="_Toc242093250">Step 3:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Downloading Census shapefile</a></p>
 
 </div>
@@ -515,15 +389,15 @@ minute or two to download).</p>
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587075">Step 6:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=Stepheader-GIS><a name="_Toc242093251">Step 4:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Loading the census table and shapefile in ArcGIS</a></p>
 
 </div>
 
 <p class=Instructions-GIS>Add the <b>tl_2022_us_county10</b> shapefile to a map.</p>
 
-<p class=MsoNormal><img border=0 width=480 height=278 id="Picture 10"
-src="Downloading_Census_Data_files/image009.png"
+<p class=MsoNormal><img border=0 width=360 height=209 id="Picture 10"
+src="Downloading_Census_Data.fld/image003.png"
 alt="Map&#10;&#10;Description automatically generated"></p>
 
 <p class=MsoNormal>You’ll note that US territories (non-states) are also
@@ -537,7 +411,7 @@ Step 4 to the counties shapefile.</p>
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587076">Step 7:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=Stepheader-GIS><a name="_Toc242093252">Step 5:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Joining non-spatial census table to a spatial layer</a></p>
 
 </div>
@@ -557,7 +431,7 @@ using any method you deem appropriate.</span></p>
 <div style='border:solid #548DD4 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
 background:#8DB3E2'>
 
-<p class=Stepheader-GIS><a name="_Toc83587077">Step 8:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=Stepheader-GIS><a name="_Toc242093253">Step 6:<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Symbolizing the shapefiles by census data</a></p>
 
 </div>
@@ -571,14 +445,14 @@ using the Frac_bac attribute you computed in the Excel file.</p>
 <p class=Instructions-GIS>Select <b>Graduated Colors</b> under primary
 symbology and <b>frac_bac</b> as the field.</p>
 
-<p class=Instructions-GIS><img border=0 width=329 height=358 id="Picture 11"
-src="Downloading_Census_Data_files/image010.png"
+<p class=Instructions-GIS><img border=0 width=247 height=269 id="Picture 11"
+src="Downloading_Census_Data.fld/image004.png"
 alt="Graphical user interface, text, application, chat or text message&#10;&#10;Description automatically generated"></p>
 
 <p class=Instructions-GIS>The map should update immediately.</p>
 
-<p class=Instructions-GIS><img border=0 width=624 height=269 id="Picture 13"
-src="Downloading_Census_Data_files/image011.png"
+<p class=Instructions-GIS><img border=0 width=468 height=202 id="Picture 13"
+src="Downloading_Census_Data.fld/image005.png"
 alt="A map of the world&#10;&#10;Description automatically generated with medium confidence"></p>
 
 <p class=Instructions-GIS>This map is pretty unsightly! Can you make its area and
@@ -591,8 +465,8 @@ outlines).</p>
 
 <p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
 margin-left:0in;line-height:13.0pt'><span style='font-size:10.0pt;color:gray'><img
-border=0 width=76 height=26 id="Picture 8"
-src="Downloading_Census_Data_files/image012.png"></span><span style='font-size:
+border=0 width=57 height=20 id="Picture 8"
+src="Downloading_Census_Data.fld/image006.png"></span><span style='font-size:
 10.0pt;color:gray'> Manuel Gimond, Alex Karner. Last modified on 10/7/2024</span></p>
 
 </div>
